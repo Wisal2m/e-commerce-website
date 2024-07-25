@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - My E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1><a href="index.html">My Store</a></h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#shop">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Checkout Page -->
+    <section id="checkout">
+        <div class="container">
+            <h2>Checkout</h2>
+            <div class="checkout-details">
+                <h3>Billing Details</h3>
+                <form id="checkout-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="address">Address</label>
+                    <input type="text" id="address" required>
+                    
+                    <label for="city">City</label>
+                    <input type="text" id="city" required>
+                    
+                    <label for="country">Country</label>
+                    <input type="text" id="country" required>
+                    
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" required>
+                    
+                    <h3>Payment Details</h3>
+                    
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" required>
+                    
+                    <label for="card-expiry">Expiry Date</label>
+                    <input type="text" id="card-expiry" required>
+                    
+                    <label for="card-cvc">CVC</label>
+                    <input type="text" id="card-cvc" required>
+                    
+                    <button type="submit" class="btn-primary">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact us: contact@my-store.com | +92 456 78908</p>
+            <p>&copy; 2024 My Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+

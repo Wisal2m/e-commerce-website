@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1><a href="index.html">My Store</a></h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#shop">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Homepage -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover our featured products and exclusive deals.</p>
+            <a href="#shop" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <div class="container">
+            <h2>Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/electronics.jpg" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/cosmetics.jpg" alt="Cosmetics">
+                    <h3>Cosmetics</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/jewelry.jpg" alt="Jewelry">
+                    <h3>Jewelry</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-slider">
+                <div class="product-card" data-product-id="1">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <h3>PAPAYA 1KG</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(1)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(1)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="2">
+                    <img src="images/product2.jpg" alt="Product 2">
+                    <h3>SMART    TV  5 6" INCHES</h3>
+                    <p>$39.99</p>
+                    <button class="btn-secondary" onclick="addToCart(2)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(2)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="2">
+                    <img src="images/product2.jpg" alt="Product 2">
+                    <h3>SMART TV  5 6" INCHES</h3>
+                    <p>$39.99</p>
+                    <button class="btn-secondary" onclick="addToCart(2)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(2)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="3">
+                    <img src="images/product3.jpg" alt="Product 3">
+                    <h3>PHONE CASE</h3>
+                    <p>$9.99</p>
+                    <button class="btn-secondary" onclick="addToCart(3)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(3)">Shop Now</button>
+                </div>
+               
+                <div class="product-card" data-product-id="1">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <h3>PAPAYA 1KG</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(1)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(1)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="0">
+                    <img src="images/product0.jpg" alt="Product 0">
+                    <h3>FURNITURE</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(0)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(0)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="3">
+                    <img src="images/product3.jpg" alt="Product 3">
+                    <h3>I PHONE CASE</h3>
+                    <p>$9.99</p>
+                    <button class="btn-secondary" onclick="addToCart(3)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(3)">Shop Now</button>
+                </div>
+               
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Great products and excellent service!" - THAMSON</p>
+                </div>
+                <div class="testimonial">
+                    <p>" 5 STARS  . Highly recommend!" - ALI</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I love shopping here. Highly recommend!" -  Smith</p>
+                </div>
+                <div class="testimonial">
+                    <p>"WONDERFUL EXPERIENCE. Highly recommend!" - KHAN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Shop Page -->
+    <section id="shop">
+        <div class="container">
+            <h2>Shop</h2>
+            <div class="product-filters">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <!-- Add more products as needed -->
+               
+
+                <div class="product-card" data-product-id="4">
+                    <img src="images/product4.jpg" alt="Product 4">
+                    <h3>MOUSE</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(4)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(4)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="5">
+                    <img src="images/product5.jpg" alt="Product 5">
+                    <h3>CLEANSER</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(5)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(5)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="6">
+                    <img src="images/product6.jpg" alt="Product 6">
+                    <h3>SHIRT</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(6)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(6)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="7">
+                    <img src="images/product7.jpg" alt="Product 7">
+                    <h3>HEADPHONES</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(7)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(7)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="8">
+                    <img src="images/product8.jpg" alt="Product 8">
+                    <h3>SNEAKERS</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(8)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(8)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="9">
+                    <img src="images/product9.jpg" alt="Product 9">
+                    <h3>INTERIOR DESIGN</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(9)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(9)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="10">
+                    <img src="images/product10.jpg" alt="Product 10">
+                    <h3>KITCHEN</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(10)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(10)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="11">
+                    <img src="images/product11.jpg" alt="Product 11">
+                    <h3>LAPTOP</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(11)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(11)">Shop Now</button>
+                </div>
+                <div class="product-card" data-product-id="12">
+                    <img src="images/product12.jpg" alt="WATCH">
+                    <h3>WRIST WATCH</h3>
+                    <p>$29.99</p>
+                    <button class="btn-secondary" onclick="addToCart(12)">Add to Cart</button>
+                    <button class="btn-primary" onclick="shopNow(12)">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>Contact us: contact@my-store.com | +92 456 78908</p>
+            <p>&copy; 2024 My Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
